@@ -1,0 +1,61 @@
+html {
+	height: 100%;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	background: #222;	
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	color: #eee;
+	height: 100%;
+	overflow: hidden;
+}
+
+	#content {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+		#video {
+			z-index: 100;
+			width: 320px;
+			height: 184px;
+			position: absolute;
+			top:0px;
+			left:0px;
+		}
+
+		#subtitleWrapper {
+			position: absolute;
+			top:184px;
+			bottom:0px;
+			left:0px;
+			right:0px;
+			overflow-y: scroll;
+		}
+
+			#subtitles {
+				position: relative;
+			}
+
+				#subtitles p {
+					font-size: 16px;
+					line-height: 20px;
+					position: absolute;
+					left: 0px;
+					right: 0px;
+					text-align: center;
+					opacity: 0.2;
+
+					-webkit-transition: opacity 0.1s ease-in-out;
+					   -moz-transition: opacity 0.1s ease-in-out;
+					    -ms-transition: opacity 0.1s ease-in-out;
+					     -o-transition: opacity 0.1s ease-in-out;
+					        transition: opacity 0.1s ease-in-out;
+				}
+
+					#subtitles p.highlight {
+						opacity: 1.0;
+					}
