@@ -52,7 +52,7 @@ html = [
 		'<body>',
 			'<div id="content">',
 				'<div id="videoContainer">',
-					'<video id="video" width="320" height="184" controls autoplay>',
+					'<video id="video" width="320" height="184" controls autoplay webkit-playsinline>',
 						//'<source src="quarks_inklusion.mp4" type="video/mp4">',
 						'<source src="http://http-ras.wdr.de/CMS2010/mdb/ondemand/weltweit/fsk0/30/306935/306935_3042091.mp4" type="video/mp4">',
 						'Your browser does not support the video tag.',
